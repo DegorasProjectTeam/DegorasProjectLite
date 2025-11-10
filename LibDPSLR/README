@@ -1,0 +1,11 @@
+CRD sample code provides several sets of software to read, write, convert, and 
+test CRD files. These are provided "as is" with no guarantees. The software has 
+been tested with a limited amount of data, and there may still be errors and 
+incomplete implementation of standards. This software is meant to be a starting
+place for those implementing and managing ranging data in the CRD format.
+
+
+
+Compiled with C++14
+
+Or

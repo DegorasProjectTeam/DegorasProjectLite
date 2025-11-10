@@ -1,0 +1,1873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormSatellite</class>
+ <widget class="QDialog" name="FormSatellite">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>850</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>750</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>SALARA PROJECT   |   Space Object Application</string>
+  </property>
+  <property name="accessibleName">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*--------------------------------------------------------*/
+/*   QWidget   */
+/*--------------------------------------------------------*/
+QWidget[accessibleName=&quot;MainWindow&quot;]
+{
+background-color: rgb(53, 53, 53);
+}
+/*--------------------------------------------------------*/
+
+
+/*--------------------------------*/
+/*   QLabel   */
+/*--------------------------------*/
+QLabel[accessibleName=&quot;LabelInfoWhite&quot;]
+{
+color: rgb(240,240,240);
+font: 14px &quot;Open Sans Semibold&quot;;
+}
+QLabel[accessibleName=&quot;LabelInfoWhite&quot;]:disabled
+{
+color: rgb(100, 100,100);
+}
+QLabel[accessibleName=&quot;LabelInfoOrange&quot;]
+{
+color:  rgb(250,150,0);
+font:  14px &quot;Open Sans Semibold&quot;;
+}
+QLabel[accessibleName=&quot;LabelInfoOrange&quot;]:disabled
+{
+color: rgb(100, 100,100);
+}
+QLabel[accessibleName=&quot;LabelInfoBlue&quot;]
+{
+color:  rgb(0,80,80);
+font:  14px &quot;Open Sans Semibold&quot;;
+}
+QLabel[accessibleName=&quot;LabelInfoBlue&quot;]:disabled
+{
+color: rgb(100, 100,100);
+}
+QLabel[accessibleName=&quot;LabelFooter&quot;]
+{
+color: rgb(240,240,240);
+font: 8pt &quot;Open Sans Semibold&quot;;
+}
+QLabel[accessibleName=&quot;LabelFooter&quot;]:disabled
+{
+color: rgb(100, 100,100);
+}
+QLabel[accessibleName=&quot;LabelMainTitle&quot;]
+{
+color: rgb(240,240,240);
+font: 15pt &quot;Open Sans Extrabold&quot;;
+}
+QLabel[accessibleName=&quot;LabelMainTitle&quot;]:disabled
+{
+color: rgb(100, 100,100);
+}
+QLabel[accessibleName=&quot;LabelMainSubtitle&quot;]
+{
+color: rgb(240,240,240);
+font: 11pt &quot;Open Sans Semibold&quot;;
+}
+QLabel[accessibleName=&quot;LabelMainSubtitle&quot;]:disabled
+{
+color: rgb(100, 100,100);
+}
+/*--------------------------------------------------------*/
+
+
+/*--------------------------------------------------------*/
+/*   QMenu   &amp;   QMenuBar   */
+/*--------------------------------------------------------*/
+QMenu
+{
+color: rgb(240,240,240);
+background-color: rgb(70, 70, 70);
+font:  10pt &quot;Open Sans Semibold&quot;;
+}
+QMenu::item:selected
+{
+background-color: rgb(0, 80, 80);
+ } 
+QMenuBar 
+{
+color: rgb(240,240,240);
+background-color: rgb(70,70,70);
+font:  10pt &quot;Open Sans Semibold&quot;;
+ }
+QMenuBar::item
+{ 
+spacing: 3px; 
+padding: 1px 4px;
+background-color: rgb(70,70,70);
+border-radius: 4px;
+font:  10pt &quot;Open Sans Semibold&quot;;
+}
+QMenuBar::item:selected 
+{ 
+background-color: rgb(0,80,80);
+}
+QMenu::item:disabled 
+{ 
+color: rgb(100,100,100);
+}
+/*--------------------------------------------------------*/
+
+
+/*--------------------------------------------------------*/
+/*   QGroupBox   */
+/*--------------------------------------------------------*/
+QGroupBox
+{
+font: 16px &quot;Open Sans Extrabold&quot;;
+color: rgb(240,240,240);
+border: 3px solid gray;
+border-radius: 10px;
+margin-top: 0.6em;
+padding: 3px;
+}
+QGroupBox:disabled
+{
+color: rgb(100, 100,100);
+}
+/*--------------------------------------------------------*/
+
+
+/*--------------------------------------------------------*/
+/*   QTableView   */
+/*--------------------------------------------------------*/
+QTableView
+{
+color: rgb(240,240,240);
+background-color: rgb(80,80,80);
+alternate-background-color: rgb(70,70,70);
+selection-background-color: rgb(0,80,80);
+font:   13px &quot;Open Sans Semibold&quot; ;
+border: 1px solid black;
+}
+QTableView::item
+{ 
+color: rgb(240,240,240);
+border-top: 2px solid gray;
+}
+QTableView::item:disabled
+{ 
+color: rgb(100, 100,100);
+}
+QTableView::indicator
+{
+border: 1px solid gray;
+}
+QTableView::indicator:unchecked
+{
+background-color:  rgb(140, 20, 0);
+}
+QTableView::indicator:checked
+{
+background-color: rgb(50, 90, 0);
+}
+/*--------------------------------------------------------*/
+
+
+/*--------------------------------------------------------*/
+/*   QPushButton   */
+/*--------------------------------------------------------*/
+QPushButton
+{
+color: rgb(240,240,240);
+background-color: rgb(53,53,53);
+font:  14px &quot;Open Sans Semibold&quot;;
+}
+QPushButton:disabled
+{
+color: rgb(100, 100,100);
+}
+QPushButton[accessibleName=&quot;ButtonLilac&quot;]
+{
+border-style: solid;
+border-width: 1px;
+border-color: black;
+border-radius: 6px;
+background-color:  rgb(50,50,100);
+}
+QPushButton[accessibleName=&quot;ButtonLilac&quot;]:hover
+{
+background-color:  rgb(50,60,100);
+}
+QPushButton[accessibleName=&quot;ButtonGreen&quot;]
+{
+border-style: solid;
+border-width: 1px;
+border-color: black;
+border-radius: 5px;
+background-color: rgb(50, 90, 0);
+}
+QPushButton[accessibleName=&quot;ButtonGreen&quot;]:hover
+{
+background-color: rgb(50, 100, 0);
+}
+QPushButton[accessibleName=&quot;ButtonRed&quot;]
+{
+border-style: solid;
+border-width: 1px;
+border-color: black;
+border-radius: 5px;
+background-color:  rgb(140, 20, 0);
+}
+QPushButton[accessibleName=&quot;ButtonRed&quot;]:hover
+{
+background-color:  rgb(150, 20, 0);
+}
+/*--------------------------------------------------------*/
+
+
+/*--------------------------------------------------------*/
+/*   QRadioButton   */
+/*--------------------------------------------------------*/
+QRadioButton
+{
+color: rgb(240,240,240);
+font:  14px &quot;Open Sans&quot;;
+}
+QRadioButton:disabled
+{
+color: rgb(100, 100,100);
+}
+QRadioButton::indicator
+{
+width: 9px;
+height: 9px;
+border-radius: 6px;
+border: 2px solid;
+border-color: gray;
+background-color: rgb(70, 70,70);
+}
+QRadioButton::indicator:checked
+{
+background-color:  rgb(250,150,0);
+}
+QRadioButton::indicator:checked:disabled
+{
+background:  rgb(100,100,100);
+}
+/*--------------------------------------------------------*/
+
+
+/*--------------------------------------------------------*/
+/* QLineEdit */
+/*--------------------------------------------------------*/
+QLineEdit
+{
+color: rgb(240,240,240);
+background-color: rgb(70, 70,70);
+padding: 2px 2px;
+font: 13px &quot;Open Sans&quot;;
+}
+QLineEdit:disabled
+{
+color: rgb(100, 100,100);
+}
+QLineEdit[error=true]
+{
+background-color: rgb(180,0,0);
+}
+QLineEdit[error=true]:focus 
+{
+border: 1px solid rgb(255,155,0);
+}
+QLineEdit:focus 
+{
+border: 1px solid rgb(255,155,0);
+}
+/*--------------------------------------------------------*/
+
+
+/*--------------------------------------------------------*/
+/*    QComboBox   */
+/*--------------------------------------------------------*/
+QComboBox
+{
+font: 14px &quot;Open Sans&quot;;
+color: rgb(240,240,240);
+padding: 2px 8px 2px 8px;
+selection-background-color: rgb(0,80,80);
+background-color:  rgb(70, 70,70);
+}
+QComboBox:disabled
+{
+color: rgb(100, 100,100);
+}
+/*--------------------------------------------------------*/
+
+
+/*--------------------------------------------------------*/
+/*    QSpinBox    */
+/*--------------------------------------------------------*/
+QSpinBox
+{ 
+font: 13px &quot;Open Sans&quot;;
+color: rgb(240,240,240);
+background-color: rgb(70, 70,70);
+padding: 2px 2px;
+}
+QSpinBox:disabled
+{
+color: rgb(100, 100,100);
+}
+/*--------------------------------------------------------*/
+
+
+/*--------------------------------------------------------*/
+/*    QDoubleSpinBox   */
+/*--------------------------------------------------------*/
+QDoubleSpinBox
+{ 
+font: 13px &quot;Open Sans&quot;;
+color: rgb(240,240,240);
+background-color: rgb(70, 70,70);
+padding: 2px 2px;
+}
+QDoubleSpinBox:disabled
+{
+color: rgb(100, 100,100);
+}
+/*--------------------------------------------------------*/
+</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2" rowstretch="1,0,0">
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>10</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <property name="horizontalSpacing">
+    <number>20</number>
+   </property>
+   <property name="verticalSpacing">
+    <number>10</number>
+   </property>
+   <item row="0" column="0" rowspan="3">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Open Sans Extrabold</family>
+       <pointsize>-1</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="title">
+      <string> General Data </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QFormLayout" name="formLayout_3">
+      <property name="leftMargin">
+       <number>7</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>7</number>
+      </property>
+      <property name="bottomMargin">
+       <number>7</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>NORAD:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="le_norad">
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="contextMenuPolicy">
+         <enum>Qt::DefaultContextMenu</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhNone</set>
+        </property>
+        <property name="inputMask">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="maxLength">
+         <number>20</number>
+        </property>
+        <property name="dragEnabled">
+         <bool>false</bool>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>Name:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="le_name">
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>COSMOS247d</string>
+        </property>
+        <property name="maxLength">
+         <number>10</number>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>ILRS name:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="le_ilrsname">
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>GLONASS128</string>
+        </property>
+        <property name="maxLength">
+         <number>10</number>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_27">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>Abbreviation:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="le_abb">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>EKS</string>
+        </property>
+        <property name="maxLength">
+         <number>3</number>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>COSPAR:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="le_cospar">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="inputMask">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="maxLength">
+         <number>20</number>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>ILRS ID:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="le_ilrsid">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="inputMask">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="maxLength">
+         <number>7</number>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>SIC Code:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="le_sic">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>9128</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_25">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>Classification:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLineEdit" name="le_classification">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Glonass</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_13">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>Radar Section (m2):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QDoubleSpinBox" name="sb_rcs">
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="suffix">
+         <string> m2</string>
+        </property>
+        <property name="decimals">
+         <number>3</number>
+        </property>
+        <property name="maximum">
+         <double>1000.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>Altitude (km):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QSpinBox" name="sb_altitude">
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="suffix">
+         <string> km</string>
+        </property>
+        <property name="maximum">
+         <number>999999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="label_18">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>Inclination (º):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QDoubleSpinBox" name="sb_inclination">
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="suffix">
+         <string> º</string>
+        </property>
+        <property name="decimals">
+         <number>3</number>
+        </property>
+        <property name="maximum">
+         <double>360.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QLabel" name="label_12">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>Is space debris:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1">
+       <widget class="QComboBox" name="cb_debris">
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>No</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Yes</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Unknown</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="12" column="0">
+       <widget class="QLabel" name="label_11">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>Laser Retro Reflector: </string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="1">
+       <widget class="QComboBox" name="cb_lrr">
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>No</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Yes</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Unknown</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="13" column="0">
+       <widget class="QLabel" name="label_21">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>Object picture:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <item>
+         <widget class="QLineEdit" name="le_picture">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pb_picture">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="../SP_Core/resources/common_resources.qrc">
+            <normaloff>:/icons/link_icon&amp;48.png</normaloff>:/icons/link_icon&amp;48.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>15</width>
+            <height>15</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="spacing">
+      <number>7</number>
+     </property>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="pb_save">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>125</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans Semibold</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="accessibleName">
+        <string>ButtonGreen</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>  Save</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../SP_Core/resources/common_resources.qrc">
+         <normaloff>:/icons/save_icon&amp;48.png</normaloff>:/icons/save_icon&amp;48.png</iconset>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="pb_cancel">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>125</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans Semibold</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="accessibleName">
+        <string>ButtonRed</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>  Cancel</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../SP_Core/resources/common_resources.qrc">
+         <normaloff>:/icons/cancel_icon&amp;48.png</normaloff>:/icons/cancel_icon&amp;48.png</iconset>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+       <property name="autoRepeatDelay">
+        <number>100</number>
+       </property>
+       <property name="autoRepeatInterval">
+        <number>100</number>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2" colspan="2">
+      <widget class="QComboBox" name="cb_autocomplete">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="pb_clear">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans Semibold</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="accessibleName">
+        <string>ButtonLilac</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>  Clear data</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../SP_Core/resources/common_resources.qrc">
+         <normaloff>:/icons/brush_icon&amp;48.png</normaloff>:/icons/brush_icon&amp;48.png</iconset>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pb_autocomplete">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans Semibold</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="accessibleName">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">:disabled
+{
+background-color: rgb(60,60,60);
+font-family: Open Sans Extrabold;
+font-style: normal;
+font-size: 8pt;
+font-weight: bold;
+color: rgb(100,100,100);
+border: 0px solid rgb(0, 0, 0);
+border-radius: 5px;
+}</string>
+       </property>
+       <property name="text">
+        <string> Autocomplete: </string>
+       </property>
+       <property name="icon">
+        <iconset resource="../SP_Core/resources/common_resources.qrc">
+         <normaloff>:/icons/zoom_icon&amp;48.png</normaloff>:/icons/zoom_icon&amp;48.png</iconset>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="1">
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Open Sans Extrabold</family>
+       <pointsize>-1</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="title">
+      <string> SLR Related Data </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <property name="leftMargin">
+       <number>7</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>7</number>
+      </property>
+      <property name="bottomMargin">
+       <number>7</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_16">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>Laser system ID:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="le_laserid">
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>EKSPLANL317SH</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_17">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>CPF provider:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QSpinBox" name="sb_ampli">
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="suffix">
+         <string> %</string>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_24">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>Initial priority:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QSpinBox" name="sb_priority">
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>NP Bin Size (s):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QSpinBox" name="sb_binsize">
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="wrapping">
+         <bool>false</bool>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <property name="suffix">
+         <string> s</string>
+        </property>
+        <property name="maximum">
+         <number>500</number>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>Normal Point Indicator:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QSpinBox" name="sb_npi">
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="maximum">
+         <number>500</number>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_20">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>Track policy:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QComboBox" name="cb_trackpolicy">
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox QListView{
+    border: none;
+    margin: none;
+   padding: none;
+}</string>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_19">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>Enablement policy:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QComboBox" name="cb_enablementpolicy">
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>Amplification (%):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="cb_cpf">
+        <property name="accessibleName">
+         <string>Satan</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QComboBox:disabled
+{
+	color: rgb(100, 100,100);
+}
+
+QComboBox:editable
+{
+    background-color:rgb(80,80,80);
+}
+
+QComboBox QAbstractItemView {
+    border: none;
+    selection-background-color: rgb(0,80,80);
+    background-color:rgb(80,80,80);
+
+}
+</string>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>All</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>No TLE</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string> Extra Parameters </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_23">
+        <property name="font">
+         <font>
+          <family>Open Sans Semibold</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>LabelInfoWhite</string>
+        </property>
+        <property name="text">
+         <string>Extra parameters:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QLineEdit" name="le_extra">
+          <property name="font">
+           <font>
+            <family>Open Sans</family>
+            <pointsize>-1</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="readOnly">
+           <bool>false</bool>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pb_extra">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Open Sans Semibold</family>
+            <pointsize>-1</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">:disabled
+{
+background-color: rgb(60,60,60);
+font-family: Open Sans Extrabold;
+font-style: normal;
+font-size: 8pt;
+font-weight: bold;
+color: rgb(100,100,100);
+border: 0px solid rgb(0, 0, 0);
+border-radius: 1px;
+}</string>
+          </property>
+          <property name="text">
+           <string> Edit</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../SP_Core/resources/common_resources.qrc">
+            <normaloff>:/icons/doc_edit_icon&amp;48.png</normaloff>:/icons/doc_edit_icon&amp;48.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>15</width>
+            <height>15</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../SP_Core/resources/common_resources.qrc"/>
+  <include location="../SP_Core/resources/common_resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

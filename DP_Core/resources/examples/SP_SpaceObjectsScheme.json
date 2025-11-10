@@ -1,0 +1,192 @@
+{
+    "SpaceObjectsSchemeArray":
+    [
+        {
+            "Index": "EnablementPolicy",
+            "Title": " EN. POLICY ",
+            "ToolTip": "Enablement policy. 'Disable' and 'Enable' allows to other programs to edit this policy. 'Always Enabled' and 'Always Disabled' not allows this behavior.",
+            "Default": 1,
+            "Type": "EnablementPolicy",
+            "Mandatory" : true,
+            "SizeHint":"150"
+        },
+        {
+            "Index": "NORAD",
+            "Title": "  NORAD  ",
+            "ToolTip": "Satellite Catalog Number.",
+            "SizeHint":"78",
+            "Unique": true,
+            "Mandatory" : true,
+            "Type" : "NumericID"
+        },
+        {
+            "Index": "Name",
+            "Title": " NAME ",
+            "ToolTip": "Space object name. The name can be generic and several objects can have the same, so it is recommended to add a sequence number (for example SL16-01, SL16-02, etc).",
+            "SizeHint":"109",
+            "Unique": true,
+            "Mandatory" : true
+        },
+        {
+            "Index": "ILRSName",
+            "Title": " ILRS NAME ",
+            "ToolTip": "Space object name given by the ILRS to the object. It may or may not match the 'Name' field.",
+            "SizeHint":"106",
+            "Unique": true
+
+        },
+        {
+            "Index": "Abbreviation",
+            "Title": " ABBR ",
+            "ToolTip": "Space object name abbreviation. For internal use of each SLR station.",
+            "SizeHint":"56",
+            "Unique": true,
+            "Mandatory" : true
+        },
+        {
+            "Index": "COSPAR",
+            "Title": " COSPAR ",
+            "ToolTip": "International Designator.",
+            "SizeHint":"84",
+            "Unique": true,
+            "Mandatory" : true
+        },
+        {
+            "Index": "ILRSID",
+            "Title": "ILRS ID",
+            "ToolTip": "Modified International Designator for the ILRS use.",
+            "SizeHint":"72",
+            "Unique": true
+        },
+        {
+            "Index": "SIC",
+            "Title": "SIC",
+            "ToolTip": "",
+            "SizeHint":"45",
+            "Unique": true
+        },
+        {
+            "Index": "Classification",
+            "Title": "CLASSIFICATION",
+            "ToolTip": "",
+            "SizeHint":"200"
+        },
+        {
+            "Index": "LaserRetroReflector",
+            "Title": "LRR",
+            "ToolTip": "Laser Retro Reflector.",
+            "Type" : "BoolTristate",
+            "Default" : 2,
+            "SizeHint":"45"
+        },
+        {
+            "Index": "IsDebris",
+            "Title": "DEBRIS",
+            "Type" : "BoolTristate",
+            "ToolTip": "True if the space object is a space debris.",
+            "Default" : 2,
+            "SizeHint":"68"
+        },
+        {
+            "Index": "TrackPolicy",
+            "Title": "TRACK POLICY",
+            "ToolTip": "",
+            "Default": 0,
+            "Type": "TrackPolicy",
+            "Mandatory" : true,
+            "SizeHint":"143"
+        },
+        {
+            "Index": "Priority",
+            "Title": "PRIOR",
+            "ToolTip": "Tracking priority.",
+            "SizeHint":"62",
+            "Default": 0
+        },
+        {
+            "Index": "ProviderCPF",
+            "Title": "CPF",
+            "ToolTip": "Default CPF provider.",
+            "SizeHint":"96",
+            "Default": "All"
+        },
+        {
+            "Index": "Altitude",
+            "Title": "ALTITUDE",
+            "ToolTip": "Altitude in miles (Km).",
+            "Type" : "NotDisplayZero",
+            "Default": 0,
+            "SizeHint":"90"
+        },
+        {
+            "Index": "RadarCrossSection",
+            "Title": "RCS",
+            "ToolTip": "Radar Cross-Section in m2.",
+            "Type" : "NotDisplayZero",
+            "Default": 0,
+            "SizeHint":"48"
+        },
+        {
+            "Index": "NormalPointIndicator",
+            "Title": "NPI",
+            "ToolTip": "Normal Point Indicator.",
+            "Type" : "NotDisplayZero",
+            "Mandatory" : true,
+            "Default": 0,
+            "SizeHint":"52"
+        },
+        {
+            "Index": "BinSize",
+            "Title": "BS",
+            "ToolTip": "Bin Size in seconds.",
+            "Type" : "NotDisplayZero",
+            "Mandatory" : true,
+            "Default": 0,
+            "SizeHint":"44"
+        },
+        {
+            "Index": "Inclination",
+            "Title": "INC",
+            "ToolTip": "Inclination in deg (?).",
+            "SizeHint":"55",
+            "Default":0
+        },
+        {
+            "Index": "Amplification",
+            "Title": "AMP",
+            "ToolTip": "Default energy amplification for the selected laser in percentage (%).",
+            "Default": 100,
+            "Type" : "Amplification",
+            "Mandatory" : true,
+            "SizeHint":"49"
+        },
+        {
+            "Index": "LaserID",
+            "Title": "LASER ID",
+            "ToolTip": "",
+            "SizeHint":"85",
+            "Default": "EKSPLA_NL317SH"
+        },
+        {
+            "Index": "DetectorID",
+            "Title": "DETECTOR ID",
+            "ToolTip": "",
+            "SizeHint":"113",
+            "Default": "ROA_SPAD"
+        },
+        {
+            "Index": "CounterID",
+            "Title": "COUNTER ID",
+            "ToolTip": "",
+            "SizeHint":"108",
+            "Default": "ROA_SR620"
+        },
+        {
+            "Index": "Picture",
+            "Title": "PICTURE",
+            "ToolTip": "",
+            "SizeHint":"0"
+        }
+    ],
+    "Version": "Test version"
+}

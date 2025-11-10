@@ -1,0 +1,4 @@
+TEMPLATE = app
+
+DESTDIR = $$DP_DEPLOY/bin
+

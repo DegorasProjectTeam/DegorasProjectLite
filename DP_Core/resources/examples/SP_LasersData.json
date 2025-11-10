@@ -1,0 +1,27 @@
+{
+    "EKSPLA PL2251" : {
+        "Amp_collaborative" : 100,
+        "Amp_non_collaborative" : 100,
+        "Amp_debris_collaborative" : 100,
+        "Amp_debris_non_collaborative" : 100,
+		"Laser_freq" : 10,
+		"Laser_freq_width" : 10000,
+		"Laser_gate_delay" : 0,
+		"Laser_gate_width" : 0,
+		"Laser_channel" : 1,
+		"Start_channel" : 1
+
+    },
+    "EKSPLA NL317SH" : {
+        "Amp_collaborative" : 1,
+        "Amp_non_collaborative" : 1,
+        "Amp_debris_collaborative" : 1,
+        "Amp_debris_non_collaborative" : 80,
+		"Laser_freq" : 10,
+		"Laser_freq_width" : 10000,
+		"Laser_gate_delay" : 1000110,
+		"Laser_gate_width" : 10000,
+		"Laser_channel" : 0,
+		"Start_channel" : 0
+    }
+}

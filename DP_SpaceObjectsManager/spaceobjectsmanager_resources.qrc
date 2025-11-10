@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="License">GPLv3.txt</file>
+        <file alias="About">SpaceObjectsManagerAbout.json</file>
+    </qresource>
+</RCC>

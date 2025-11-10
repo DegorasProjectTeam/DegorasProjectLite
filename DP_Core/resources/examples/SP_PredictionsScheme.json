@@ -1,0 +1,137 @@
+{
+    "PredictionsSchemeArray":
+    [
+        {
+            "Index": "DateTimeStart",
+            "Title": "DateTimeArray",
+            "Type" : "DateTime",
+            "SizeHint":"0"
+        },
+        {
+            "Index": "Object_NORAD",
+            "Title": "NORAD",
+            "ToolTip": "Satellite Catalog Number.",
+            "SizeHint":"60",
+            "Mandatory" : true,
+            "Type" : "NumericID"
+        },
+        {
+            "Index": "Object_Name",
+            "Title": "NAME",
+            "ToolTip": "Space object name.",
+            "SizeHint":"100",
+            "Mandatory" : true
+        },
+        {
+            "Index": "DateTimeStart",
+            "Title": "WEEK DAY",
+            "ToolTip": "Day of the week of the pass.",
+            "Type" : "WeekDay",
+            "SizeHint":"95"
+        },
+        {
+            "Index": "DateTimeStart",
+            "Title": "DATE",
+            "ToolTip": "Date at start of the pass.",
+            "Type" : "Date",
+            "SizeHint":"80",
+            "Mandatory" : true
+        },
+        {
+            "Index": "DateTimeStart",
+            "Title": "START",
+            "ToolTip": "Start time of the pass.",
+            "Type" : "Time",
+            "SizeHint":"55"
+        },
+        {
+            "Index": "DateTimeMiddle",
+            "Title": "Middle Time",
+            "ToolTip": "Middle time of the pass.",
+            "Type" : "Date",
+            "SizeHint":"0",
+            "Mandatory" : true
+        },
+        {
+            "Index": "MaximumElevation",
+            "Title": "Maximum Elevation",
+            "ToolTip": "Maximum elevation of the pass.",
+            "Default" : 0,
+            "SizeHint":"0",
+            "Mandatory" : true
+        },
+        {
+            "Index": "MaximumElevationTime",
+            "Title": "MAX. ELE.",
+            "ToolTip": "Maximum altitude of the pass and the time when it occurs.",
+            "SizeHint":"85"
+        },
+        {
+            "Index": "DateTimeEnd",
+            "Title": "END",
+            "ToolTip": "End time of the pass.",
+            "Type" : "Time",
+            "SizeHint":"55",
+            "Mandatory" : true
+        },
+        {
+            "Index": "Duration",
+            "Title": "DUR.",
+            "ToolTip": "Duration of the pass (in minutes).",
+            "Default" : 0,
+            "SizeHint":"50"
+        },
+        {
+            "Index": "Pass",
+            "Title": "PASS",
+            "Type" : "Pass",
+            "ToolTip": "Direction of the pass.",
+            "SizeHint":"80",
+            "Mandatory" : true
+        },
+        {
+            "Index": "AzimuthStart",
+            "Title": "Azimuth Start",
+            "ToolTip": "Start Azimuth",
+            "SizeHint":"0",
+            "Mandatory" : true
+        },
+        {
+            "Index": "AzimuthMiddle",
+            "Title": "Azimuth Middle",
+            "ToolTip": "Middle Azimuth",
+            "SizeHint":"0",
+            "Mandatory" : true
+        },
+        {
+            "Index": "AzimuthEnd",
+            "Title": "Azimuth End",
+            "ToolTip": "End Azimuth",
+            "SizeHint":"0",
+            "Mandatory" : true
+        },
+        {
+            "Index": "Azimuths",
+            "Title": "AZIMUTHS",
+            "ToolTip": "Start Azimuth, Middle Azimuth, End Azimuth",
+            "SizeHint":"85"
+        },
+        {
+            "Index": "CPFSource",
+            "Title": "CPF SOURCE",
+            "ToolTip": "CPF source.",
+            "SizeHint":"230",
+            "Mandatory": true
+        },
+        {
+            "Index": "CampaignTrack",
+            "Title": "Campaign",
+            "ToolTip": "'Yes' if the track belongs to the current campaign.",
+            "SizeHint":"50",
+            "Type":"YesNo",
+            "Mandatory": true
+        }
+    ],
+    "Version": "Test version"
+}
+

@@ -1,0 +1,59 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/cancel_icon&amp;48.png</file>
+        <file>icons/save_icon&amp;48.png</file>
+        <file>icons/link_icon&amp;48.png</file>
+        <file>icons/clip_icon&amp;48.png</file>
+        <file>icons/globe_3_icon&amp;48.png</file>
+        <file>icons/zoom_icon&amp;48.png</file>
+        <file>icons/doc_edit_icon&amp;48.png</file>
+        <file>icons/brush_icon&amp;48.png</file>
+        <file>fonts/Open_Sans/OpenSans-Regular.ttf</file>
+        <file>fonts/Open_Sans/OpenSans-Bold.ttf</file>
+        <file>fonts/Open_Sans/OpenSans-ExtraBold.ttf</file>
+        <file>fonts/Open_Sans/OpenSans-SemiBold.ttf</file>
+        <file>icons/import_icon&amp;48.png</file>
+        <file>images/default.png</file>
+        <file>icons/ccw_icon&amp;48.png</file>
+        <file>icons/cw_icon&amp;48.png</file>
+        <file alias="green_on_led">icons/green_on_led.png</file>
+        <file alias="green_off_led">icons/green_off_led.png</file>
+        <file>icons/cogs_icon&amp;48.png</file>
+        <file>icons/mail_icon&amp;48.png</file>
+        <file>icons/round_delete_icon&amp;48.png</file>
+        <file>icons/round_plus_icon&amp;48.png</file>
+        <file alias="SP_About">SalaraProjectAbout.json</file>
+        <file>sounds/alarm_1.wav</file>
+        <file>sounds/intro_1.wav</file>
+        <file>DP_icons/CPF FILES MANAGER [vF].png</file>
+        <file>DP_icons/ENVIRONMENTAL MONITOR [vF].png</file>
+        <file>DP_icons/PREDICTIONS GENERATOR [vF].png</file>
+        <file>DP_icons/RANGE GATE GENERATOR MANAGER  [vF].png</file>
+        <file alias="SOM.ico">DP_icons/SPACE OBJECTS MANAGER [vF].png</file>
+        <file>DP_icons/STATION CONTROL [vF].png</file>
+        <file alias="CPFManagerLogo">DP_logos/DP_CPFFilesManager_logo_vF.png</file>
+        <file alias="DegorasLogoHorizontal">DP_logos/DP_DegorasProject_logo_horizontal_vF.png</file>
+        <file alias="DegorasLogoVertical">DP_logos/DEGORAS PROJECT - VERTICAL [vF].png</file>
+        <file alias="EnvironmentalMonitorLogo">DP_logos/ENVIRONMENTAL MONITOR_vF.png</file>
+        <file alias="PredictionsGeneratorLogo">DP_logos/DP_PredictionsGenerator_logo_vF.png</file>
+        <file alias="RGGManagerLogo">DP_logos/DP_RangeGateGeneratorManager_logo_vF.png</file>
+        <file alias="SpaceObjectsManagerLogo">DP_logos/DP_SpaceObjectsManager_logo_vF.png</file>
+        <file alias="StationControlLogo">DP_logos/DP_StationControl_logo_vF.png</file>
+        <file alias="DP_License">GPLv3.txt</file>
+        <file>stylesheet_default.qss</file>
+        <file alias="TrackingSystemLogo">DP_logos/DP_TrackingSystem_logo.png</file>
+        <file>icons/redo_icon&amp;48.png</file>
+        <file>styles/dp_stylesheet.qss</file>
+        <file>icons/focus_center [#839].png</file>
+        <file>icons/focus_center_round [#841].png</file>
+        <file>icons/focus_point [#845].png</file>
+        <file>icons/focus_point [#846].png</file>
+        <file>icons/focus_point [#847].png</file>
+        <file>icons/focus_point_round [#844].png</file>
+        <file>icons/satellite [#1013].png</file>
+        <file>icons/doc_lines_stright_icon&amp;48.png</file>
+        <file>icons/export_icon&amp;48.png</file>
+        <file>icons/sound_high_icon&amp;48.png</file>
+        <file>icons/sound_mute_icon&amp;48.png</file>
+    </qresource>
+</RCC>

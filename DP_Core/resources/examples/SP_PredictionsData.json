@@ -1,0 +1,45 @@
+{
+    "PredictionsArray": 
+	[
+        {
+            "Object_NORAD": "16908",
+            "Object_Name": "COSMOSS111",
+            "DateTimeStart" : "20190220.010200",
+            "MaximumElevation" : 30,
+            "DateTimeMiddle" : "20190220.013000",
+            "DateTimeEnd" : "20190220.023000",
+            "AzimuthStart" : 100,
+            "AzimuthMiddle" : 150,
+            "AzimuthEnd" : 200,
+            "CPFSource": "elcpfquesea_molon.s3t",
+            "Pass" : "NO/SO-CW"
+        },
+		{
+			"Object_NORAD": "16908",
+			"Object_Name": "EGS",
+			"DateTimeStart" : "20180220.010200",
+			"MaximumElevation" : 30,
+			"DateTimeMiddle" : "20190220.013000",
+			"DateTimeEnd" : "20190220.023000",
+			"AzimuthStart" : 100,
+			"AzimuthMiddle" : 150,
+			"AzimuthEnd" : 200,
+			"CPFSource": "elcpfquesea_molon.s3t",
+			"Pass" : "NO/SO-CW"
+		},
+		{
+			"Object_NORAD": "16908",
+			"Object_Name": "EGS",
+			"DateTimeStart" : "20200220.010200",
+			"MaximumElevation" : 30,
+			"DateTimeMiddle" : "20190220.013000",
+			"DateTimeEnd" : "20190220.023000",
+			"AzimuthStart" : 100,
+			"AzimuthMiddle" : 150,
+			"AzimuthEnd" : 200,
+			"CPFSource": "elcpfquesea_molon.s3t",
+			"Pass" : "NO/SO-CW"
+		}
+    ],
+    "CreationTime": "20190205.130202"
+}
