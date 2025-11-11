@@ -1,4 +1,13 @@
 To compile this project:
-- Open DegorasProjectLite.pro with QtCreator and build the project.
+- Open DegorasProjectLite.pro with QtCreator and build the project with the Qt 5.15 kit.
 - At QtCreator run configuration, add make install step, and deploy the project.
-- Unzip DeployData.zip to DegorasProject deploy and check in configuration files if the folders are correct.
+- Unzip DeployData.zip to DegorasProject deploy (folder with name DegorasProject_v0.9.0).
+- The folder structure should be like this:
+    - C:/Workspace/DegorasProjectLite/
+        - DegorasProject_v0.9.0/ (the deploy folder)
+            - bin
+            - lib
+            - data
+            - SP_ConfigGlobalLink.ini
+        - DegorasProjectLite/ (the folder with code project)
+- SP_ConfigGlobalLinik.ini contains the path of SP_ConfigGlobal.ini and this one contains the path of other files necessary for the software to work. If the folder structure is the same, it is not necessary to modify the paths in the config files.
